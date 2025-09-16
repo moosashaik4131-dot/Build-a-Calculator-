@@ -1,0 +1,99 @@
+/* Updated body background and font */
+body {
+  background: linear-gradient(135deg, #dfe9f3, #cdffed);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Center container */
+.container {
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  color: #2e3d49;
+  font-size: 28px;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+/* Calculator glass-style card */
+.calculator {
+  background: #fbf9f9d9;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  max-width: 350px;
+  backdrop-filter: blur(10px);
+  border: 1px solid #e1e1e1;
+}
+
+/* Display */
+#display {
+  width: 100%;
+  height: 60px;
+  font-size: 26px;
+  text-align: right;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  background: #eef4ff;
+  border-radius: 12px;
+  color: #333;
+  font-weight: 500;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button grid layout */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* Button styles */
+button {
+  padding: 18px;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #007bff, #4dabf7);
+  color: white;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Button hover effect */
+button:hover {
+  background: linear-gradient(135deg, #0056b3, #339af0);
+  transform: scale(1.07);
+  box-shadow: 0 6px 14px rgba(0, 123, 255, 0.3);
+}
+
+/* Responsive for small devices */
+@media (max-width: 400px) {
+  .calculator {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  #display {
+    font-size: 22px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
